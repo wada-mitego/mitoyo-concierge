@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>三豊コンシェルジュセンター | ジモトを、もっとおもしろく。</title>
+  <meta name="description" content="三豊・観音寺の企業・店舗の広報・集客を総合的に支援する三豊コンシェルジュセンター。地域情報誌「miteGo」、Webサイト制作、SNS運用、LINE公式、写真・動画、デザインまで、地域の「伝えたい」をカタチにします。">
+  <meta name="theme-color" content="#fdf8ee">
+  <meta property="og:title" content="三豊コンシェルジュセンター | ジモトを、もっとおもしろく。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/placeholder/hero-landscape.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ SVG アイコン（スプライト） ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A15 15 0 0 1 4.5 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-web" viewBox="0 0 48 48"><rect x="5" y="8" width="38" height="26" rx="3" fill="#fff" stroke="currentColor" stroke-width="3"/><path d="M5 15h38" stroke="currentColor" stroke-width="3"/><rect x="10" y="20" width="14" height="9" rx="1.5" fill="currentColor" opacity=".25"/><path d="M28 21h10M28 26h7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 40h16M24 34v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 48 48"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#fd9d2f"/><stop offset=".45" stop-color="#e4235a"/><stop offset="1" stop-color="#7b3fbf"/></linearGradient></defs><rect x="4" y="4" width="40" height="40" rx="12" fill="url(#ig)"/><circle cx="24" cy="24" r="9" fill="none" stroke="#fff" stroke-width="3.4"/><circle cx="34.5" cy="13.5" r="2.4" fill="#fff"/></symbol>
+  <symbol id="i-google" viewBox="0 0 48 48"><path d="M24 3C15.7 3 9 9.5 9 17.6 9 28 24 45 24 45s15-17 15-27.4C39 9.5 32.300 3 24 3z" fill="#ea4335"/><path d="M24 3C15.7 3 9 9.500 9 17.600c0 3.200 1.800 7.300 4.300 11.400L30 7.500A15 15 0 0 0 24 3z" fill="#fbbc04"/><path d="M13.300 29C17 35 24 45 24 45s7-10 10.700-16z" fill="#34a853" opacity=".0"/><circle cx="24" cy="17.600" r="6" fill="#fff"/></symbol>
+  <symbol id="i-line" viewBox="0 0 48 48"><rect x="3" y="3" width="42" height="42" rx="12" fill="#06c755"/><path d="M24 11c-8.300 0-15 5.300-15 11.800 0 5.800 5.200 10.600 12.200 11.600.5.100 1.100.3 1.300.7.100.4.100 1 0 1.400l-.2 1.300c-.1.400-.3 1.500 1.300.8s8.700-5.100 11.900-8.800C38.600 27.200 39 25 39 22.800 39 16.300 32.300 11 24 11z" fill="#fff"/><path d="M17.500 19.500v6.500h3.500M23.500 19.500v6.500M27 26v-6.500l4 6.500v-6.500" fill="none" stroke="#06c755" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-photo" viewBox="0 0 48 48"><path d="M6 15a3 3 0 0 1 3-3h6l2.500-4h13L33 12h6a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z" fill="#fff" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="25" r="7.500" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="i-movie" viewBox="0 0 48 48"><rect x="5" y="9" width="38" height="30" rx="5" fill="#3a4350"/><path d="M20 17.500v13l11-6.500z" fill="#fff"/></symbol>
+  <symbol id="i-shop" viewBox="0 0 64 64"><path d="M8 24 12 10h40l4 14z" fill="#f0662f"/><path d="M8 24h48v4a8 8 0 0 1-16 0 8 8 0 0 1-16 0 8 8 0 0 1-16 0z" fill="#ffd23f"/><path d="M12 33v21h40V33" fill="#fff" stroke="#12395c" stroke-width="3" stroke-linejoin="round"/><rect x="25" y="38" width="14" height="16" rx="2" fill="#4aa3cf"/><path d="M8 24 12 10h40l4 14" fill="none" stroke="#12395c" stroke-width="3" stroke-linejoin="round"/></symbol>
+  <symbol id="i-local" viewBox="0 0 48 48"><circle cx="17" cy="14" r="6" fill="#f0662f"/><circle cx="33" cy="14" r="6" fill="#ffd23f"/><path d="M5 38c0-8 5-13 12-13s12 5 12 13z" fill="#f0662f"/><path d="M24 38c0-7 4-13 9-13 7 0 10 5 10 13z" fill="#ffd23f"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 48 48"><path d="m8 40 2-9L33 8l7 7-23 23z" fill="#4aa3cf"/><path d="m8 40 2-9 7 7z" fill="#12395c"/><path d="m29 12 7 7" stroke="#fff" stroke-width="2.500"/></symbol>
+  <symbol id="i-creative" viewBox="0 0 48 48"><rect x="5" y="7" width="38" height="26" rx="3" fill="#fff" stroke="#1f7bb0" stroke-width="3.500"/><path d="M5 27h38" stroke="#1f7bb0" stroke-width="3"/><path d="M14 41h20M24 33v8" stroke="#1f7bb0" stroke-width="3.500" stroke-linecap="round"/><path d="M12 22l7-8 5 5 6-8 6 11" fill="none" stroke="#f0662f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-support" viewBox="0 0 48 48"><path d="M4 22l10-8 8 4 6-1 10 8-9 9-6-3-4 6-7-5z" fill="#2a9d8f"/><path d="M4 22l-1 11 9 8M44 22l1 11-9 8" fill="none" stroke="#2a9d8f" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.500 7-12a7 7 0 0 0-14 0c0 5.500 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.500" fill="currentColor"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="三豊コンシェルジュセンター トップへ">
+      <img class="brand-mark" src="images/logo-mark.svg" alt="" width="52" height="40">
+      <span class="brand-text">
+        <span class="brand-ja">三豊コンシェルジュセンター</span>
+        <span class="brand-en">MITOYO CONCIERGE CENTER</span>
+      </span>
+    </a>
+
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul>
+        <li><a href="#top">ホーム</a></li>
+        <li><a href="#about">私たちのこと</a></li>
+        <li><a href="#business">サービス</a></li>
+        <li><a href="#works">制作事例</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#mitego">miteGo</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a href="#company">会社概要</a></li>
+      </ul>
+      <a class="gnav-contact" href="#contact"><svg class="ico"><use href="#i-mail"/></svg>お問い合わせ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="images/placeholder/hero-landscape.svg" alt="" width="1600" height="900" fetchpriority="high">
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="hero-eyebrow en">LOCAL × CREATIVE × EDITORIAL</p>
+      <h1 class="hero-title hand" id="hero-title">
+        <span class="line"><mark>ジモトを、</mark></span>
+        <span class="line"><mark>もっとおもしろく。</mark></span>
+      </h1>
+      <p class="hero-sub">三豊・観音寺の魅力を、<br>もっと見つけて、もっと伝えて、<span class="nw">もっとつなげる。</span></p>
+      <p class="hero-lead">地域情報誌「miteGo」をはじめ、Webサイト、SNS、LINE、写真・動画など、さまざまな方法で地域のお店や企業の「伝えたい」をカタチにします。</p>
+      <a class="btn btn-ghost" href="#about">私たちについて <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <p class="hero-script en" aria-hidden="true">Local<br>Creative<br>Together</p>
+    </div>
+
+    <!-- コラージュ：写真は images/placeholder/hero-*.svg を差し替え -->
+    <div class="collage" aria-label="三豊・観音寺のお店・人・風景のコラージュ">
+      <figure class="tile t-staff"><div class="tile-clip"><img src="images/placeholder/hero-shop-staff.svg" alt="お店で料理を提供するスタッフ" width="900" height="760"></div></figure>
+      <figure class="tile t-photo"><div class="tile-clip"><img src="images/placeholder/hero-photographer.svg" alt="カメラで撮影するスタッフ" width="900" height="800"></div></figure>
+      <figure class="tile t-mitego"><div class="tile-clip"><img src="images/placeholder/hero-mitego.svg" alt="地域情報誌miteGo" width="900" height="680"></div></figure>
+      <figure class="tile t-interview"><div class="tile-clip"><img src="images/placeholder/hero-interview.svg" alt="お店の方への取材風景" width="1000" height="760"></div></figure>
+      <figure class="tile t-web"><div class="tile-clip"><img src="images/placeholder/hero-web.svg" alt="ホームページ制作" width="1000" height="700"></div></figure>
+      <figure class="tile t-mikan"><div class="tile-clip"><img src="images/placeholder/hero-mikan.svg" alt="みかんと瀬戸内海" width="800" height="900"></div></figure>
+      <p class="memo hand">この町には、<br>まだまだ知らない<br>「いいこと」がある。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-text reveal">
+      <p class="eyebrow en">ABOUT</p>
+      <h2 class="h2" id="about-title">私たちは、<span class="nw">地域の</span><br class="sp-only"><span class="nw">「広報担当」です。</span></h2>
+      <p class="lines">いい商品がある。<br>いいサービスがある。<br>いい会社がある。</p>
+      <p>でも、それが知られていなければ、ないのと同じかもしれません。</p>
+      <p>私たちが大切にしているのは、広告をつくることだけではなく、そのお店や会社の<strong class="mk">「いいところ」</strong>を一緒に見つけること。</p>
+      <p class="lines">誰に届けるのか。<br>何を伝えるのか。<br>どんな方法なら届くのか。</p>
+      <p>地域を知る私たちだからこそできる方法で、三豊・観音寺のお店や企業の集客・採用・情報発信をサポートします。</p>
+    </div>
+    <div class="about-photos reveal">
+      <figure class="ph ph-a"><img src="images/placeholder/about-interview.svg" alt="お店の方と打ち合わせをするスタッフ" width="1000" height="760" loading="lazy"></figure>
+      <figure class="ph ph-b"><img src="images/placeholder/about-photographer.svg" alt="取材・撮影をするスタッフ" width="900" height="800" loading="lazy"></figure>
+      <p class="memo hand">一緒に、<br>いいところを探します。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR BUSINESS ============ -->
+<section class="section business" id="business" aria-labelledby="business-title">
+  <div class="container">
+    <header class="sec-head reveal">
+      <p class="eyebrow en">OUR BUSINESS</p>
+      <h2 class="h2 hand" id="business-title">地域の「伝えたい」を、<br class="sp-only">いろんなカタチに。</h2>
+    </header>
+  </div>
+
+  <div class="svc-scroller">
+    <ul class="svc-list">
+      <li class="svc-card reveal">
+        <a href="#mitego">
+          <span class="svc-head"><span class="svc-no en">01</span><span class="svc-name en">miteGo</span></span>
+          <span class="svc-sub">地域情報誌</span>
+          <img src="images/placeholder/service-mitego.svg" alt="" width="900" height="680" loading="lazy">
+          <span class="svc-desc">三豊・観音寺の「知らなかった」を届ける地域情報誌。企画・取材・撮影・ライティング・デザイン・発行まで対応します。</span>
+          <span class="svc-more">詳しく見る <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li class="svc-card reveal">
+        <a href="#works">
+          <span class="svc-head"><span class="svc-no en">02</span><span class="svc-name en">WEB SITE</span></span>
+          <span class="svc-sub">ホームページ制作</span>
+          <img src="images/placeholder/service-web.svg" alt="" width="900" height="680" loading="lazy">
+          <span class="svc-desc">地域のお店に、ちゃんと使えるホームページを。制作して終わりではなく、集客に使い続けられるサイトをつくります。</span>
+          <span class="svc-more">詳しく見る <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li class="svc-card reveal">
+        <a href="#works">
+          <span class="svc-head"><span class="svc-no en">03</span><span class="svc-name en">SNS SUPPORT</span></span>
+          <span class="svc-sub">SNS運用支援</span>
+          <img src="images/placeholder/service-sns.svg" alt="" width="900" height="680" loading="lazy">
+          <span class="svc-desc">投稿するだけじゃない。「見て」「行ってみたい」につながるInstagramを。企画・撮影・投稿・運用までお手伝いします。</span>
+          <span class="svc-more">詳しく見る <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li class="svc-card reveal">
+        <a href="#starter">
+          <span class="svc-head"><span class="svc-no en">04</span><span class="svc-name en">LINE OFFICIAL</span></span>
+          <span class="svc-sub">LINE公式アカウント支援</span>
+          <img src="images/placeholder/service-line.svg" alt="" width="900" height="680" loading="lazy">
+          <span class="svc-desc">来てくれたお客様と、ちゃんとつながり続ける。クーポンや情報配信、リピーターづくりをサポートします。</span>
+          <span class="svc-more">詳しく見る <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li class="svc-card reveal">
+        <a href="#works">
+          <span class="svc-head"><span class="svc-no en">05</span><span class="svc-name en">PHOTO &amp; MOVIE</span></span>
+          <span class="svc-sub">写真・動画・ドローン撮影</span>
+          <img src="images/placeholder/service-photo.svg" alt="" width="900" height="680" loading="lazy">
+          <span class="svc-desc">「行ってみたい」は、一枚の写真から。広告・料理・スタッフ・ショート動画・ドローンまで、魅力が伝わる写真と動画を。</span>
+          <span class="svc-more">詳しく見る <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li class="svc-card reveal">
+        <a href="#works">
+          <span class="svc-head"><span class="svc-no en">06</span><span class="svc-name en">DESIGN &amp; CONTENT</span></span>
+          <span class="svc-sub">デザイン・コンテンツ制作</span>
+          <img src="images/placeholder/service-design.svg" alt="" width="900" height="680" loading="lazy">
+          <span class="svc-desc">チラシ・パンフレット・会社案内・広告まで。取材・構成・ライティング・撮影・デザインをまとめて対応します。</span>
+          <span class="svc-more">詳しく見る <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <p class="swipe-hint sp-only en" aria-hidden="true">SWIPE <svg class="ico"><use href="#i-arrow"/></svg></p>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="why" id="why" aria-labelledby="why-title">
+  <div class="why-photo">
+    <img src="images/placeholder/why-sunset.svg" alt="夕暮れの瀬戸内海" width="1000" height="900" loading="lazy">
+    <p class="memo hand">このまちの<br>「いいこと」を<br>もっと。</p>
+  </div>
+  <div class="why-body">
+    <header class="reveal">
+      <p class="eyebrow en">WHY US</p>
+      <h2 class="h2 hand" id="why-title">地域を知っている。<br><span class="nw">だから、</span><span class="nw">届く方法を考えられる。</span></h2>
+    </header>
+    <ul class="why-list">
+      <li class="reveal"><svg class="why-ico"><use href="#i-local"/></svg><h3 class="en">LOCAL</h3><p class="why-ja">地域を知っている。</p></li>
+      <li class="reveal"><svg class="why-ico"><use href="#i-edit"/></svg><h3 class="en">EDIT</h3><p class="why-ja">魅力を見つけ、<br class="pc-only">伝わる形に編集する。</p></li>
+      <li class="reveal"><svg class="why-ico"><use href="#i-creative"/></svg><h3 class="en">CREATIVE</h3><p class="why-ja">紙・Web・SNS・写真・動画まで<br class="pc-only">まとめて対応する。</p></li>
+      <li class="reveal"><svg class="why-ico"><use href="#i-support"/></svg><h3 class="en">SUPPORT</h3><p class="why-ja">必要なものから<br class="pc-only">小さく始められる。</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ LOCAL STARTER KIT ============ -->
+<section class="section starter" id="starter" aria-labelledby="starter-title">
+  <div class="container starter-grid">
+    <div class="starter-text reveal">
+      <p class="eyebrow en">SERVICE PACKAGE</p>
+      <p class="starter-catch hand">お店の集客、<br>まとめてスタート。</p>
+      <h2 class="starter-name en" id="starter-title">LOCAL<br>STARTER KIT</h2>
+      <p class="starter-name-ja">ローカル スターター キット</p>
+      <p>ホームページ、Instagram、Google、LINE公式、写真・動画など、地域店舗の情報発信に必要なものをまとめて整えるサービスです。</p>
+      <p class="starter-note">「何から始めればいいかわからない」というお店でも、集客の土台を一緒につくります。</p>
+      <ul class="starter-points">
+        <li>必要なものだけ選べる</li>
+        <li>撮影から運用までワンストップ</li>
+        <li>小さく始めて、育てていける</li>
+      </ul>
+      <a class="btn btn-primary" href="#contact">LOCAL STARTER KITを見る <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <!-- 図解：中心の「お店」に6つのチャネルがつながる -->
+    <div class="kit reveal" role="img" aria-label="お店の集客を中心に、WEB・Instagram・Google・LINE・PHOTO・MOVIEがつながっている図">
+      <p class="kit-memo hand" aria-hidden="true">全部つながって、<br>お店の力に。</p>
+      <div class="kit-ring" aria-hidden="true"></div>
+      <div class="kit-center"><svg><use href="#i-shop"/></svg><span>お店の集客</span></div>
+      <div class="kit-node" style="--a:0deg"><span class="spoke"></span><span class="pill"><svg><use href="#i-web"/></svg><b class="en">WEB</b><small>ホームページ</small></span></div>
+      <div class="kit-node" style="--a:60deg"><span class="spoke"></span><span class="pill"><svg><use href="#i-google"/></svg><b class="en">Google</b><small>ビジネスプロフィール</small></span></div>
+      <div class="kit-node" style="--a:120deg"><span class="spoke"></span><span class="pill"><svg><use href="#i-line"/></svg><b class="en">LINE</b><small>公式アカウント</small></span></div>
+      <div class="kit-node" style="--a:180deg"><span class="spoke"></span><span class="pill"><svg><use href="#i-movie"/></svg><b class="en">MOVIE</b><small>動画制作</small></span></div>
+      <div class="kit-node" style="--a:240deg"><span class="spoke"></span><span class="pill"><svg><use href="#i-photo"/></svg><b class="en">PHOTO</b><small>写真撮影</small></span></div>
+      <div class="kit-node" style="--a:300deg"><span class="spoke"></span><span class="pill"><svg><use href="#i-instagram"/></svg><b class="en">Instagram</b><small>SNS</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKS（js/data.js から描画） ============ -->
+<section class="section works" id="works" aria-labelledby="works-title">
+  <div class="container">
+    <header class="sec-head sec-head-row reveal">
+      <div>
+        <p class="eyebrow en">WORKS</p>
+        <h2 class="h2 hand" id="works-title">私たちが一緒につくったもの。</h2>
+      </div>
+      <a class="more-link" href="#works">制作事例一覧 <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </header>
+    <div class="tabs" id="workTabs" role="tablist" aria-label="制作事例のカテゴリー"></div>
+    <ul class="works-grid" id="worksGrid"></ul>
+  </div>
+</section>
+
+<!-- ============ PICK UP NEWS（js/data.js から描画） ============ -->
+<section class="section news" id="news" aria-labelledby="news-title">
+  <div class="container">
+    <header class="sec-head sec-head-row reveal">
+      <div>
+        <p class="eyebrow en">PICK UP NEWS</p>
+        <h2 class="h2 hand" id="news-title">地域の「今」をピックアップ。</h2>
+      </div>
+      <a class="more-link" href="#news">お知らせ一覧 <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </header>
+    <ul class="news-grid" id="newsGrid"></ul>
+  </div>
+</section>
+
+<!-- ============ miteGo ============ -->
+<section class="mitego" id="mitego" aria-labelledby="mitego-title">
+  <div class="container mitego-grid">
+    <div class="mitego-text reveal">
+      <p class="eyebrow en">MAGAZINE</p>
+      <p class="mitego-catch hand">三豊・観音寺の<br>「知らなかった」を届ける。</p>
+      <h2 class="mitego-logo en" id="mitego-title">miteGo</h2>
+      <p class="mitego-sub">地域情報誌</p>
+      <p>地元のお店・人・風景・イベントを、写真と言葉でじっくり編集した地域情報誌。まだ知られていない「いいこと」を、毎号お届けします。</p>
+      <a class="btn btn-primary" id="mitegoCta" href="#">最新号を見る <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="shelf reveal" id="mitegoShelf" aria-label="miteGo 最新号とバックナンバー"></div>
+  </div>
+</section>
+
+<!-- ============ RECRUIT ============ -->
+<section class="section recruit" id="recruit" aria-labelledby="recruit-title">
+  <div class="container recruit-card">
+    <div class="recruit-photo">
+      <img src="images/placeholder/recruit.svg" alt="撮影をするスタッフ" width="1000" height="760" loading="lazy">
+    </div>
+    <div class="recruit-body reveal">
+      <p class="eyebrow en">RECRUIT</p>
+      <h2 class="h2 hand" id="recruit-title">地元で、<br>おもしろい仕事をしよう。</h2>
+      <ul class="chips">
+        <li>地域のお店を取材する。</li><li>魅力を見つける。</li><li>写真を撮る。</li>
+        <li>文章を書く。</li><li>デザインする。</li><li>Webをつくる。</li>
+      </ul>
+      <p>地域だからこそできる、クリエイティブな仕事があります。お店の人と話して、まちを歩いて、いいところを見つけて、カタチにする。そんな仕事を、一緒にしませんか。</p>
+      <a class="btn btn-dark" href="#contact">採用情報を見る <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPANY ============ -->
+<section class="section company" id="company" aria-labelledby="company-title">
+  <div class="container company-grid">
+    <div class="company-visual reveal">
+      <img src="images/placeholder/company.svg" alt="三豊の海と町並み" width="1000" height="760" loading="lazy">
+      <div class="mission">
+        <p class="eyebrow en">MISSION</p>
+        <p class="mission-text hand">ジモトを<br>もっとおもしろく</p>
+      </div>
+    </div>
+    <div class="company-info reveal">
+      <p class="eyebrow en">COMPANY</p>
+      <h2 class="h2" id="company-title">会社概要</h2>
+      <dl class="dl">
+        <div><dt>会社名</dt><dd>三豊コンシェルジュセンター株式会社</dd></div>
+        <div><dt>代表取締役</dt><dd>和田 壮平</dd></div>
+        <div><dt>所在地</dt><dd>香川県三豊市仁尾町仁尾辛34番地2<br>三豊市役所仁尾庁舎3階</dd></div>
+        <div><dt>事業内容</dt>
+          <dd><ul class="dl-list">
+            <li>地域情報誌miteGoの企画・編集・発行</li>
+            <li>広告企画・制作</li>
+            <li>Webサイト制作</li>
+            <li>SNS運用支援</li>
+            <li>LINE公式アカウント支援</li>
+            <li>写真・動画撮影</li>
+            <li>グラフィックデザイン</li>
+            <li>イベント企画・運営</li>
+            <li>地域プロモーション</li>
+          </ul></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container contact-inner reveal">
+    <p class="eyebrow en">CONTACT</p>
+    <h2 class="contact-title hand" id="contact-title">「こんなことできますか？」から、<br class="sp-only">お気軽に。</h2>
+    <ul class="contact-list">
+      <li>広告を出したい。</li><li>ホームページを作りたい。</li><li>SNSをどうにかしたい。</li><li>お店をもっと知ってもらいたい。</li>
+    </ul>
+    <p class="contact-lead">まだ何をすればいいかわからなくても大丈夫です。</p>
+    <div class="contact-actions">
+      <!-- TODO: 公開前に実際のメールアドレス／お問い合わせフォームのURLへ差し替え -->
+      <a class="btn btn-primary btn-lg" href="mailto:info@example.com"><svg class="ico"><use href="#i-mail"/></svg>相談してみる</a>
+      <!-- TODO: 公開前に実際の電話番号へ差し替え -->
+      <a class="btn btn-white btn-lg" href="tel:0000000000"><svg class="ico"><use href="#i-phone"/></svg>電話で相談する</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <img class="brand-mark" src="images/logo-mark.svg" alt="" width="52" height="40">
+        <span class="brand-text"><span class="brand-ja">三豊コンシェルジュセンター</span><span class="brand-en">MITOYO CONCIERGE CENTER</span></span>
+      </a>
+      <address>香川県三豊市仁尾町仁尾辛34番地2<br>三豊市役所仁尾庁舎3階</address>
+    </div>
+    <nav class="footer-nav" aria-label="フッターメニュー">
+      <ul>
+        <li><a href="#about">私たちのこと</a></li><li><a href="#business">サービス</a></li><li><a href="#works">制作事例</a></li>
+        <li><a href="#news">お知らせ</a></li><li><a href="#mitego">miteGo</a></li><li><a href="#recruit">採用情報</a></li>
+        <li><a href="#company">会社概要</a></li><li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="copyright en">© Mitoyo Concierge Center Co., Ltd.</p>
+</footer>
+
+<!-- スマホ固定CTA -->
+<a class="fab-contact" href="#contact"><svg class="ico"><use href="#i-mail"/></svg>相談してみる</a>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
